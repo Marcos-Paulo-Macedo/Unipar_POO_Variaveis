@@ -1,0 +1,14 @@
+class Variaveis {
+    
+    int quantidadeVendida = 5;
+    int quantidadeComprada = 6;
+    String clienteVenda = "Marcos";
+    String clienteCompra = "Paulo";
+    float valorVenda = 10.5f;
+    float valorCompra = 9.0f;
+    double pesoProdutoVenda = 10.0;
+    double pesoProdudoCompra = 10.0;
+    boolean vendaConcluida = true;
+    boolean vendaCancelada = true;
+    
+}
