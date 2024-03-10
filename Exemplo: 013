@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Ex012 {
+    public static void main(String[] args) {
+        System.out.println("Digite dois valores");
+        Scanner leia = new Scanner(System.in);
+        double valor1 = leia.nextDouble();
+        double valor2 = leia.nextDouble();
+        double multi = valor1 * valor2;
+        double div = valor1 / valor2;
+        double soma = valor1 + valor2;
+        double subtr = valor1 - valor2;
+
+        System.out.println("""
+                           ---------------------------
+                           Resultado dos valores %.2f e %.2f
+                           soma = %.2f
+                           subtração = %.2f
+                           divisão = %.2f
+                           multiplicação = %.2f
+                           ---------------------------
+                           """.formatted(valor1,valor2,soma,subtr,div,multi));
+    }
+}
