@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Ex013 {
+    public static void main(String[] args) {
+        System.out.println("Informações do produto");
+        Scanner leia = new Scanner(System.in);
+
+        System.out.print("Digite o nome do produto: ");
+        String nomeProduto = leia.next();
+
+        System.out.print("Qual o valor do produto? "); 
+        double precoProduto = leia.nextDouble();
+
+        System.out.print("Qual o percentual de desconto deste produto? ");
+        double desconto = leia.nextDouble();
+
+        double valorDesconto = (desconto / 100) * precoProduto;
+        double valorFinal = precoProduto - valorDesconto;
+
+        System.out.println("""
+                           Nome: %s
+                           Preço: R$ %.2f
+                           Desconto: %.2f%%
+                           Valor final do produto: R$ %.2f
+                           """.formatted(nomeProduto, precoProduto, desconto, valorFinal));
+
+    }
+}
